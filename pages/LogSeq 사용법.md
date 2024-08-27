@@ -1,7 +1,7 @@
 # Download
-collapsed:: true
 	- https://logseq.com/downloads
-	- 다운로드 받은 후, 모든 메모를 저장할 로컬 폴더 지정 필요
+		- 다운로드 받은 후, 모든 메모를 저장할 로컬 폴더 지정 필요
+	- https://github.com/eungi-aiza/LogSeq.git
 - # 누구를 위한 툴인가
 	- 절대 모두에게 최고의 툴은 아니다
 		- ==폴더 구조가 없기 때문에== 익숙하지 않아 오히려 비효율적일 수 있습니다.
@@ -49,6 +49,7 @@ collapsed:: true
 			- 특정 그룹으로 페이지들을 묶을 수 있는 경우
 				- meetings, projects, subprojects, tips
 			- tag는 ==page 혹은 block의 property== 입니다. ==filtering할 때== 아주 유용합니다.
+			  id:: 66cdcbc2-8ed4-4ce8-88aa-4e08def1da17
 				- page filtering
 					- {{query (page-tags [[tag_page]])}}
 					  query-sort-by:: block
@@ -94,11 +95,28 @@ collapsed:: true
 	- subprojects
 	- meetings
 - # useful commands
-	- code block
-	- quote
-	- templates
+	- `/Code block`
+		- ```python
+		  print("Hello, Pyhthon?")
+		  ```
+	- `<` -> Quote
+		- #+BEGIN_IMPORTANT
+		  This is QUOTE
+		  #+END_IMPORTANT
+	- `/Template`
 	- todo
-	- embed page or block
+	  :LOGBOOK:
+	  CLOCK: [2024-08-27 Tue 23:41:54]--[2024-08-27 Tue 23:41:55] =>  00:00:01
+	  CLOCK: [2024-08-27 Tue 23:41:55]--[2024-08-27 Tue 23:41:56] =>  00:00:01
+	  :END:
+		- TODO [#A]
+		  SCHEDULED: <2024-08-29 Thu>
+		  DEADLINE: <2024-08-31 Sat>
+		- DONE [#B]
+		  SCHEDULED: <2024-08-23 Fri>
+		  DEADLINE: <2024-08-24 Sat>
+	- `/Page embed` or `/Block embed`
+	- `/Page reference` or `/Block reference`
 - # plug-ins
 	- calendar
 	- tags
@@ -106,6 +124,7 @@ collapsed:: true
 	- icon
 	- emoji picker
 	- todo
+	- git sync
 - # Tips
 	- github sync
 	- wiki 복사 붙여넣기
